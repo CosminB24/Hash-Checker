@@ -9,5 +9,5 @@ Each result is also saved as a `.json` file with the current date and time in th
 
 # Some disclaimers
 
-The tool will provide reliable results just if the malware was scaned previous by TotalVirus.
+The tool will only provide results if the file was previously scanned by VirusTotal.
 It has been built just for learning and fun purposes.
