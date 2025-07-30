@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
     const response = await fetch('http://localhost:8080/scan', {
       method: 'POST',
       headers: {
-        'Bearer': 'test' // Token-ul din API-ul tău
+        'Bearer': 'test' // static token for requests
       },
       body: formData
     });
@@ -126,7 +126,7 @@ const Hero: React.FC = () => {
         
         setScanResults(results);
       } else {
-        // Dacă nu găsește fișierul în VirusTotal, consideră-l curat
+        // doesn't exists on VirusTotal = seems clear
         const results: ScanResult = {
           fileName: file.name,
           fileSize: file.size,
@@ -291,7 +291,7 @@ const Hero: React.FC = () => {
             <div className="space-y-8">
               <div className="inline-flex items-center space-x-3 glass-morphism rounded-full px-6 py-3">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-gray-300 font-semibold tracking-wide">Enterprise-Grade Security</span>
+                <span className="text-gray-300 font-semibold tracking-wide">Secured API layer for trusted access</span>
               </div>
               
               <div className="space-y-6">
@@ -302,8 +302,7 @@ const Hero: React.FC = () => {
                 </h1>
                 
                 <p className="text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
-                  Advanced malware detection and threat analysis powered by artificial intelligence 
-                  and the world's most comprehensive security database
+                Threat analysis and malware detection based on real-time data from VirusTotal’s security engine
                 </p>
               </div>
             </div>

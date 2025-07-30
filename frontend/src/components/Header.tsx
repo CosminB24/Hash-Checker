@@ -15,8 +15,8 @@ const Header: React.FC = () => {
                 </div>
               </div>
               <div>
-                <span className="text-2xl font-bold text-white tracking-tight">SecureCheck</span>
-                <div className="text-xs text-gray-400 font-medium">Powered by VirusTotal</div>
+                <span className="text-2xl font-bold text-white tracking-tight">HashChecker</span>
+                <div className="text-xs text-gray-400 font-medium">Uses VirusTotal for file reputation checks</div>
               </div>
             </div>
             

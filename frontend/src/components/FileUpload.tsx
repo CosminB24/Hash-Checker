@@ -141,7 +141,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload, isScanning = fals
                   <span className="text-gradient block">instant security analysis</span>
                 </h3>
                 <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                  Advanced threat detection powered by machine learning and 70+ antivirus engines
+                Fast and accurate threat analysis using data from over 70 antivirus engines
                 </p>
               </div>
               
