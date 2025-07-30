@@ -45,10 +45,13 @@ const Hero: React.FC = () => {
     const formData = new FormData();
     formData.append('file', file);
 
-    const response = await fetch('http://localhost:8080/scan', {
+    const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+    const API_TOKEN = import.meta.env.VITE_API_TOKEN || 'test';
+
+    const response = await fetch(`${API_BASE_URL}/scan`, {
       method: 'POST',
       headers: {
-        'Bearer': 'test' // static token for requests
+        'Bearer': API_TOKEN
       },
       body: formData
     });
@@ -62,10 +65,13 @@ const Hero: React.FC = () => {
 
   const scanHashWithAPI = async (hash: string): Promise<any> => {
     try {
-      const response = await fetch('http://localhost:8080/scan', {
+      const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
+      const API_TOKEN = import.meta.env.VITE_API_TOKEN || 'test';
+
+      const response = await fetch(`${API_BASE_URL}/scan`, {
         method: 'POST',
         headers: {
-          'Bearer': 'test',
+          'Bearer': API_TOKEN,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({ hash: hash })
