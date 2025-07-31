@@ -29,6 +29,7 @@ The app simulates a realistic threat detection pipeline: the backend is deployed
 
 ## Architecture Overview
 This diagram shows how the components communicate with each other, from local UI interaction to external hash checker.
+![Architecture Overview](./assets/architecture.png)
 
 **Request Flow**: TBE
 
