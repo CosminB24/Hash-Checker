@@ -32,7 +32,9 @@ This diagram shows how the components communicate with each other, from local UI
 
 ![Architecture Overview](./assets/architecture_overview.png)
 
-**Request Flow**: TBE
+**Request Flow**: This diagram illustrates how the backend validates and processes each request sent to the `/scan` endpoint.
+
+![Request Flow Diagram](./assets/requestflow.png)
 
 ## Setup Instructions
 **Notes about API Access Control**: TBE
