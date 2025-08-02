@@ -39,6 +39,7 @@ This diagram shows how the components communicate with each other, from local UI
 ## Setup Instructions
 **Notes about API Access Control**: The backend uses a simple Bearer token authentication to protect the /scan endpoint. Make sure you set the VITE_API_TOKEN in your frontend .env to match the API_TOKEN used by the backend. Requests without a valid token will receive a 401 Unauthorized response.
 Note: This is a basic mechanism for demo purposes — in production you should replace it with proper authentication and secret management.
+
 **Backend**: TBE
 **Frontend**: TBE
 
