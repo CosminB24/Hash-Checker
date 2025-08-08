@@ -77,7 +77,28 @@ Note: This is a basic mechanism for demo purposes — in production you should r
 `curl -X POST http://localhost:8080/scan -H "Bearer: test" -H "Content-Type: application/json" -d "{\"hash\": \"44d88612fea8a8f36de82e1278abb02f\"}"` - it's a hash of a virus file, so it will return some results from the scanning engines
 
 ## Cloud Deployed
-TBE
+This application can be deployed both locally and in the cloud, depending on your setup and use case.
+
+**Requirements**:
+
+* An AWS EC2 instance (in my case I used: Ubuntu 22.04);
+
+* Docker and Docker Compose installed on the EC2 instance;
+
+* Security Group allowing inbound traffic on:
+
+  * Port 8080 (Backend API);
+
+  * Port 5173 (Frontend, if served from EC2);
+
+  * Port 22 (for SSH access);
+
+* A valid VirusTotal API key.
+
+
+**Security Considerations**:
+
+Do not expose sensitive ports publicly (e.g., avoid exposing the backend to 0.0.0.0/0 without token validation).
 
 ## Screenshots
 TBE
