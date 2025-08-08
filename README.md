@@ -103,5 +103,20 @@ Do not expose sensitive ports publicly (e.g., avoid exposing the backend to 0.0.
 ## Screenshots
 Below are example screenshots showing how HashChecker looks and works in practice.
 
+**Main Dashboard:**
+![Main Dashboard](./assets/main_dashboard.png)
+
+![Down Dashboard](./assets/down_dashboard.png)
+
+**No Threats Detected:**
+
+![No threats detected](./assets/no_threats.png)
+
+**Threat Detected:**
+
+![Threats detected](./assets/threat_detected.png)
+
 ## Disclaimer
-TBE
+This is an experimental project for learning cybersecurity concepts. Please do not rely on it for critical systems, and use it responsibly. The VirusTotal API is subject to its own usage terms and rate limits; please review their documentation before integrating it in any commercial environment. 
+
+By using this tool, you accept that you are responsible for any scans you perform and any data you submit. No guarantees are made regarding the accuracy, performance, or security of this code in production systems. Always validate security tools thoroughly before applying them in real-world environments.
