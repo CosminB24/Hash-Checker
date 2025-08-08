@@ -63,11 +63,13 @@ Note: This is a basic mechanism for demo purposes — in production you should r
 2. Create a .env file:
 
 `VITE_API_URL=http://ec2-ip>:8080`
+
 `VITE_API_TOKEN=test`
 
 3. Install dependencies and run:
 
 `npm install`
+
 `npm run dev`
 
 **Make some tests**:
