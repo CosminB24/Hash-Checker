@@ -101,7 +101,7 @@ This application can be deployed both locally and in the cloud, depending on you
 Do not expose sensitive ports publicly (e.g., avoid exposing the backend to 0.0.0.0/0 without token validation).
 
 ## Screenshots
-TBE
+Below are example screenshots showing how HashChecker looks and works in practice.
 
 ## Disclaimer
 TBE
